@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offbeat</title>
+    <style>      
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-size: 25px;
+        font-family: 'PT Sans', sans-serif;
+        text-transform: capitalize;
+    }
+    nav{
+        height: 50px;
+        background-color: antiquewhite;
+        width: 100vw;
+    }
+    nav ul{
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+
+    #nav-list li{
+        margin-top: 7px;
+    }
+    #nav-list{
+        list-style-type:none;
+    }
+    #profile{
+        height: 30px;
+    }
+    #cart{
+        height: 30px;
+    }
+    #nav1{
+        background-color:aqua;
+        height: 55px;
+        /* position: sticky; */
+    }
+    #signin{
+        width: 97px;
+        height: 40px;
+        background-color: #e24d7c;
+        display: inline-block;
+        position: relative;
+        left: 67vw;
+        bottom: 41px;
+        border-radius: 4px;
+        color: white;
+    }
+    input[type = "text"]{
+        width: 30vw;
+        display: inline-block;
+        position: relative;
+        left: 31vw;
+        height: 34px;
+        margin-top: 9px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 0, 212);
+    }
+    .container3{
+        margin-top: 30px;
+        width: 100vw;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* grid-template-columns: 33vw 33vw 33vw; */
+        justify-content: space-evenly;
+        row-gap: 10vh;
+    }
+    .container3 img{
+        width: 307px;
+        height: 460px;
+        box-shadow: 7.5px 7.5px 12px rgb(0, 115, 255);
+    }
+    figure:hover{
+        transform: scale(1.1);
+        transition: transform 0.4s ease-in-out;
+    }
+    figcaption{
+        color: rgb(82, 0, 159);
+
+    }
+    #profile{
+        height: 30px;
+    }
+    #cart{
+        height: 30px;
+    }
+    #nav-list,#nav1{
+        position: sticky;
+    }
+    footer{
+        background-color: rgb(111, 38, 38);
+    }
+    .socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+    
+    }
+    .socialIcons a{
+    background-color: rgb(0, 255, 30);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 35px;
+    }
+    .footerNav{
+        color: rgb(0, 255, 247);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    hr{
+        color: white;
+        margin: 35px;
+    }
+    .footerBottom{
+        color: rgb(0, 8, 255);
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <form action="" id="searchbar">
+            <input type="text" placeholder="Search...">
+        </form>
+        <a href="http://127.0.0.1:3000/signinpage.html"><button id="signin">login </button></a>
+    </div>
+    <nav>
+        <ul id="nav-list">
+            <li>new</li>
+            <li>top</li>
+            <li>bottoms</li>
+            <li>trending</li>
+            <li>winterwear</li>
+            <li>shoes</li>
+            <li>casual wear</li>
+            <li>sale</li>
+            <li><img  id= "profile" src="https://cdn-icons-png.flaticon.com/512/3106/3106921.png" alt="" style="height: 30px;"></li>
+            <li><img id = "cart" src="https://www.iconbunny.com/icons/media/catalog/product/cache/2/thumbnail/600x/1b89f2fc96fc819c2a7e15c7e545e8a9/1/0/1027.13-shopping-bag-icon-iconbunny.jpg" alt="" style="height: 30px;"></li>
+        </ul>
+    </nav>
+    <div class="container3">
+        <figure>
+            <img src="https://manyavar.scene7.com/is/image/manyavar/I02_Manyavar%20Still00756_17-08-2022-04-15:650x900" alt="">
+            <figcaption>moss green sherwani <br>Rs2199</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F25%2F06%2F2506fc8b992846a1951eae30970a4f20a4f59a28.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>slim fit trousers <br>Rs1399</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe4%2F1b%2Fe41b39bba7e3d0d121a1d67d90df211e50db1ca3.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>relaxed fit hoodie <br>Rs1499</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F23%2F4b%2F234ba4b82418ca316b959bcbc45930006e942ced.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>regular wool jumper <br>Rs1199</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6c%2Fb1%2F6cb1832282326beb4a79c43a252acd92b543947d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>jacquard-weave shirt <br>Rs1499</figcaption>
+        </figure>
+        <figure>
+            <img src="https://manyavar.scene7.com/is/image/manyavar/I03_IMGL8947_16-02-2022-19-41:650x900" alt="">
+            <figcaption>maroon kurta set <br>Rs1799</figcaption>
+        </figure>
+        <figure>
+            <img src="https://manyavar.scene7.com/is/image/manyavar/M9234_09-11-2022-06-08-2:650x900" alt="">
+            <figcaption>kurta jacket set  <br>Rs2899</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcf%2F34%2Fcf3465e959bd1cbc27c584d5254774f47158327c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>carduroy trousers <br>Rs1399</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2Ffc%2F69fc3925695d9d92b66a9e4b0c9d426f39f5e7f1.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>regular fit sweatshirt<br>Rs1499</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F97%2Fd7%2F97d7b19c2d06387624ad5f5afd2943efb6191c6b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="">
+            <figcaption>rib-knit jumper<br>Rs1299</figcaption>
+        </figure>
+        <figure>
+            <img src="https://manyavar.scene7.com/is/image/manyavar/Day%20412855_10-11-2022-13-11:650x900" alt="">
+            <figcaption>ethnic print half jacket <br>Rs2099</figcaption>
+        </figure>
+        <figure>
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fff%2F18%2Fff18eadcf6c8bcddafe2ff57759847a80902e0ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+            <figcaption>regular fit hoodie<br>Rs1199</figcaption>
+        </figure>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footerNav">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>news</li>
+            <li>our team</li>
+        </div>
+        <hr>
+        <div class="footerBottom">
+            <p>&copy; 2024 Vishal Dadrwal. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

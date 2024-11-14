@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m0{
+            background-color: skyblue;
+            background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-blue-tech-background-image_401911115.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .main{
+            border: 2px;
+            border-radius: 5px;
+            height: 610px;
+            width: 700px;
+            padding: 15px;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            font-size: 30px;
+            background-color: rgb(245, 208, 233);   
+        }
+        #m1{
+            border: 1px;
+            text-align: center;
+            font-family: monospace;
+            padding: 5px;
+            background-color: rgb(206, 206, 180);
+            border-radius: 5px;
+            font-size: 47px;
+        }
+        .m2{
+            border: 1px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            background-color: rgb(182, 172, 159);
+            border-radius: 5px;
+            height: 525px;
+        }
+        label{
+            font-size: 30px;
+        }
+        #firstname{
+            min-inline-size: 680px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        #surname{
+            min-inline-size: 680px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }  
+        #password{
+            min-inline-size: 680px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        #email{
+            min-inline-size: 680px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        #number{
+            min-inline-size: 680px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        #agree{
+            min-inline-size: 300px;
+            border-radius: 3px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        /*To change size of box*/
+        input.checkbox{
+            height: 20px;
+            width: 20px;
+        }
+        #submit{
+            min-inline-size: 680px;
+            background-color: green;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #reset{
+            min-inline-size: 680px;
+            background-color: blue;
+            border-radius: 3px;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        </style>
+</head>
+<body class="m0">
+    <div class="main">
+        <form action="http://127.0.0.1:3000/mainpage.html">
+        <div id="m1">Fill the all Information</div>
+        <div class="m2">
+            <label for="name">First Name: </label>
+            <div><input type="text" name="" id="firstname" placeholder="Firstname"></div>
+
+            <label for="name">Surname Name: </label>
+             <div><input type="text" name="" id="surname" placeholder="Surname"></div>
+
+            <label for="password">Password: </label>
+            <div><input type="password" name="" id="password" placeholder="Password"></div>
+
+            <label for="email">Email: </label>
+            <div><input type="email" name="" id="email" placeholder="Email"></div>
+
+            <label for="number">Mobile Number:</label>
+            <div><input type="number" name="" id="number" placeholder="Mobile Number"></div>
+
+            <label for="agree" class="box"></label>
+            <div>Agree terms and Conditions <input type="checkbox" name="" id="agree" class="checkbox"></div>
+
+            <div><input type="submit" value="Submit" id="submit"></div>
+
+            <div><input type="reset" value="Reset" id="reset"></div>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
